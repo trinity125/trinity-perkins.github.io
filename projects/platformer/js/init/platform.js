@@ -40,8 +40,8 @@
         createPlatform(400, 250);
         createPlatform(280, 460, 0.5);
         
-        platform.create(200, 580);
-        platform.create(250, 350);
+        platform.create(100, 580);
+        platform.create(100, 500, 0.5);
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
