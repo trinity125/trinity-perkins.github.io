@@ -28,7 +28,7 @@
 
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-         createPlatform(450,500);
+         createPlatform(450,400);
         createPlatform(350, 400,);
         createPlatform(250, 300, 3.5);
         createPlatform(100, 580);
