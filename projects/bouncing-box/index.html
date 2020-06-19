@@ -58,22 +58,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			var positionX = 10;
-			//fram 1
-			positionX = 0 + 10;
-			moveBoxTo(positionX);
-			// frame 2
-			positionX = 10 + 10;
-			moveBoxTo(positionX);
-			// box is clicked
-			positionX = 0;
-			//back to update
-			// frame 3
-			positionX = 20 + 10;
-			moveBoxTo(positionX);
-			// frame 4
-			positionX = 20 + 10;
-			moveBoxTo(positionX);
+			var positionX = 0;
 			var points = 1; 
 			var speed = 10;
 			
@@ -87,12 +72,14 @@
 			turn it around! 
 			*/
 			function update() {
-			moveBoxTo(boardWidth);
-			moveBoxTo(300);
-			positionX = positionX + 10;
+			positionX += speed ;
 			moveBoxTo(positionX);
-			speed();
-			
+			if (positionX  > boardWidth) {
+				speed*= -1;
+			}
+			if (positionX < 0){
+				speed*= -1;
+			}
 			}
 			
 
@@ -103,11 +90,18 @@
 			*/
 			function handleBoxClick() {
 				positionX = 0;
-				changeBoxText(1);
-				// your ode to increase the points variable by 1
-				changeBoxText(points);
-				speed(3);
+				// your have to increase the points variable by 1
 				
+				changeBoxText(points);
+				points++;
+			
+				speed += 3;
+				if (speed > 0) {
+					speed += 3;
+				}
+				else if (speed < 0) {
+					speed -= 3;
+				}
 
 
 			}
