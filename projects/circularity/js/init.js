@@ -61,15 +61,15 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            physikz.updatePosition(circles[eachCircle]);
+            physikz.updatePosition(circles);
            
             // TODO 5 : Call game.checkCirclePosition() on your circles.
-            game.checkCirclePosition( eachCircle);
+            game.checkCirclePosition(circles);
         
 
             // TODO 8 : Iterate over the array
-           for (var i = 0; i < myArray.length; i++) {
-            var eachValue = myArray[i];
+           for (var i = 0; i < circles.length; i++) {
+            var eachValue = circlesi];
            
     
             // code to repeat using eachValue
@@ -90,12 +90,12 @@ var init = function (window) {
             }
             
             // TODO 5 : YOUR CODE STARTS HERE //////////////////////
-            canvas.width
-            canvas.height
+            canvas.width;
+            canvas.height;
             
-            circle.x 
-            circle.y
-            canvas.radius
+            circle.x ;
+            circle.y;
+            canvas.radius;
 
 
             // YOUR TODO 5 CODE ENDS HERE //////////////////////////
@@ -114,7 +114,7 @@ var init = function (window) {
         game.update = update;
         
         app.addUpdateable(window.opspark.game);
-    }
+    };
 };
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
@@ -123,3 +123,11 @@ if((typeof process !== 'undefined') &&
     // here, export any references you need for tests //
     module.exports = init;
     }
+};
+    
+    
+    
+    
+    
+    
+    
